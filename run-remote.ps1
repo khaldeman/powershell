@@ -27,6 +27,8 @@ Param (
      
 ) 
 
+Import-Module DhcpServer
+
 if($cred -eq $null)
 {
     $cred = Get-Credential -Credential domain\user
